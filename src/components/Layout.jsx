@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Drawer, AppBar, Toolbar, Typography, List, ListItem, ListItemButton, ListItemIcon, ListItemText, IconButton, Avatar, Menu, MenuItem } from '@mui/material';
-import { LayoutDashboard, CheckSquare, LogOut, Menu as MenuIcon, User, Settings, Bell, Folder } from 'lucide-react';
+import { LayoutDashboard, CheckSquare, LogOut, Menu as MenuIcon, User, Settings, Bell, Folder, BarChart2 } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { logOut } from '../store/authSlice';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
@@ -29,6 +29,7 @@ const Layout = () => {
         { text: 'Dashboard', icon: <LayoutDashboard size={20} />, path: '/dashboard' },
         { text: 'My Tasks', icon: <CheckSquare size={20} />, path: '/tasks' },
         { text: 'Workspaces', icon: <Folder size={20} />, path: '/workspaces' },
+        { text: 'Reports', icon: <BarChart2 size={20} />, path: '/reports' },
         { text: 'Settings', icon: <Settings size={20} />, path: '/settings' },
     ];
 

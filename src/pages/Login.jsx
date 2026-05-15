@@ -26,7 +26,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const userData = await login(data).unwrap();
-      dispatch(setCredentials({ token: userData.token }));
+      dispatch(setCredentials({ token: userData.token, tenantId: userData.tenantId }));
       navigate('/dashboard');
     } catch (err) {
       // Errors handled by RTK Query

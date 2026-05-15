@@ -12,6 +12,6 @@ export const apiSlice = createApi({
       return headers;
     },
   }),
-  tagTypes: ['Task', 'Workspace', 'Settings', 'Webhook'],
+  tagTypes: ['Task', 'Workspace', 'Settings', 'Webhook', 'Report'],
   endpoints: (builder) => ({}),
 });

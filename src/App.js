@@ -13,6 +13,7 @@ import Dashboard from './pages/Dashboard';
 import Tasks from './pages/Tasks';
 import Workspaces from './pages/Workspaces';
 import Settings from './pages/Settings';
+import Reports from './pages/Reports';
 
 const darkTheme = createTheme({
   palette: {
@@ -72,6 +73,7 @@ const AnimatedRoutes = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/workspaces" element={<Workspaces />} />
+          <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
         </Route>
       </Route>
