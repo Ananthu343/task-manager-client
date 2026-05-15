@@ -10,7 +10,7 @@ export const reportApi = apiSlice.injectEndpoints({
         const token = getState().auth.token;
         if (!token) return;
 
-        const socket = io('http://localhost:8000', {
+        const socket = io('https://task-manager.in/api', {
           auth: { token }
         });
 

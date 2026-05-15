@@ -31,7 +31,7 @@ const Reports = () => {
         if (!user?.tenant_id) return;
 
         // Connect to your Node.js backend
-        const socket = io('http://localhost:8000', {
+        const socket = io('https://task-manager.in/api', {
             transports: ['websocket']
         });
 

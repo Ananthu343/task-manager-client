@@ -11,7 +11,7 @@ export const taskApi = apiSlice.injectEndpoints({
         if (!token) return;
 
         // Initialize Socket connection
-        const socket = io('http://localhost:8000', {
+        const socket = io('https://task-manager.in/api', {
           auth: { token }
         });
 
